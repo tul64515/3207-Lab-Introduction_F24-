@@ -1,5 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 char rand_char()
 {
-    random r = new random();
-    char c = (char)(r.nextInt(26)+'a');
+    char c = 'a' + (random() % 26);
+}
+
+int main()
+{
+    srand(time(NULL));
+    printf("%c\n", rand_char());
 }
