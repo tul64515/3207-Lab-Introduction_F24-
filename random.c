@@ -8,4 +8,5 @@
 char randchar()
 {
     char c = 'a' + (random() % 26);
+    return c;
 }
